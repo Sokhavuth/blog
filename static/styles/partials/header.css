@@ -116,6 +116,12 @@
   display: block;
 }
 
+@media only screen and (max-width: 600px){
+  .Header .header-wrapper{
+    grid-template-columns: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
