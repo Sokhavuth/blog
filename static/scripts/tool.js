@@ -1,4 +1,4 @@
-
+//mysite/static/scripts/tool.js
 function mobileMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
