@@ -7,12 +7,14 @@
     <title>{{ siteTitle }}</title>
 
     {% load static %}
+    <script src="{% static 'scripts/jQuery.js' %}"></script>
     <link rel="stylesheet" href="{% static 'styles/base.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
     <link rel="icon" href="{% static 'images/site_logo.png' %}" >
     
+    {% block insert_into_head %}<!-- to add -->{% endblock %}
   </head>
   <body>
-    {{ message }}
+    {% include 'partials/header.html' %}
   </body>
 </html>

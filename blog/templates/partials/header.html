@@ -1,0 +1,52 @@
+<!-- mysite/blog/templates/partials/menu.html -->
+{% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='{% static "styles/partials/header.css" %}' />
+<script src="{% static 'scripts/tool.js' %}"></script>
+
+<section class='Header'>
+    <div class='header-wrapper region'>
+        <div  class='datetime'>
+            <div class='date'></div>
+            <div id='kh-clock'></div>
+            <script>
+                var date = new Date('{{ datetime|date:"Y-m-d H:i" }}')
+                date = getKhDate(date)
+                $('.date').append(date)
+                clock()
+                setDateTime()
+            </script>
+        </div>
+        <div class='title-wrapper'>
+            <a class='title' href=''>{{ siteTitle }}</a>
+            <a class='description'>{{ description }}</a>
+        </div>
+        <form class='search' method='post' action='search/'>
+            <input type='text' />
+            <input type='submit' value='ស្វែង​រក' />
+        </form>
+    </div>
+
+    <div class='menu-wrapper'>
+    <nav class='menu region'>
+        <div class="topnav" id="myTopnav">
+            <a href="" class="active">ទំព័រ​ដើម</a>
+            <a href="#news">ព័ត៌មាន</a>
+            <div class="dropdown">
+              <button class="dropbtn">ជំពួក​ព័ត៌មាន
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <a href="#contact">ទំនាក់ទំនង</a>
+            <a href="#about">អំពី​ពួក​យើង</a>
+            <a href="admin/">ចូល​ក្នុង</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
+        </div>
+    </nav>
+    </div>
+</section>
