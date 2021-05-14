@@ -1,0 +1,43 @@
+<!-- mysite/blog/templates/base.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ siteTitle }}</title>
+
+    {% load static %}
+    <script src="{% static 'scripts/jQuery.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'styles/bookcover.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
+    <link rel="icon" href="{% static 'images/site_logo.png' %}" >
+    
+    {% block insert_into_head %}<!-- to add -->{% endblock %}
+  </head>
+  <body>
+    {% include 'partials/header.html' %}
+
+    <div class='book-cover region'>
+      <div class='book-wrapper'>
+        <div class='book-python'>
+          <div class='title'>Container of Container</div>
+          <div class='info'>
+            <p>មេរៀន​ដំបូង​សំរាប់​អ្នក​មិន​ចេះ​សោះ​</p>
+            <p>​​​សិក្សា​ពី​ការបង្កើត​ Container ក្នុង Container</p>
+            <p>គន្លឺះ​ល្អ​ៗ សំរាប់សរសេរ​​កម្មវិធី​ជាក់ស្តែង</p>
+          </div>
+          <div class='img-wrapper'>
+            <img src='{% static "images/python.png" %}' />
+          </div>
+          <div class='footer'>&copy; 2021 KHMER WEB </div>
+        </div>
+      </div>
+
+      <div class=''>
+      </div>
+
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

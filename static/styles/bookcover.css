@@ -1,0 +1,95 @@
+/*static/styles/base.css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --grey: rgb(95, 95, 95);
+}
+
+a{
+  text-decoration: none;
+  color: var(--brown);
+}
+
+a:hover{
+  opacity: .7;
+}
+
+.region{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body{
+  font: 14px/1.5 Vidaloka, OdorMeanChey;
+  color: var(--grey);
+}
+
+.widget{
+  background: rgb(73, 0, 0);
+}
+
+.book-cover{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 25% 50% auto auto;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.book-cover .book-wrapper{
+  background: #1e1e44;
+  position: relative;
+  padding-top: 140%;
+}
+
+.book-cover .book-wrapper .book-python{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.book-cover .book-python .title{
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font: 20px/1.5 Anton, Koulen;
+  background: #ffa500;
+}
+
+.book-cover .book-python .info{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font: 15px/1.75 HandWriting;
+}
+
+.book-cover .book-python .img-wrapper{
+  position: absolute;
+  bottom: 62px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.book-cover .book-python .img-wrapper img{
+  width: 65%;
+  
+}
+
+.book-cover .book-python .footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #265a6e;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
