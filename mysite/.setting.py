@@ -1,6 +1,4 @@
-ALLOWED_HOSTS = ['localhost']
 DEBUG = True
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
