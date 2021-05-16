@@ -41,7 +41,7 @@ body{
 }
 
 .book-cover .book-wrapper{
-  background: #1e1e44;
+  background: #64a44c;
   position: relative;
   padding-top: 140%;
 }
@@ -59,7 +59,7 @@ body{
   text-align: center;
   padding: 10px 0;
   font: 20px/1.5 Anton, Koulen;
-  background: #ffa500;
+  background: #3b6b4f;
 }
 
 .book-cover .book-python .info{
@@ -86,7 +86,7 @@ body{
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #265a6e;
+  background: #1d1c1f;
   width: 100%;
   text-align: center;
   color: white;

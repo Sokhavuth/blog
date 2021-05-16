@@ -10,14 +10,19 @@
     {% block content %}
     <div class='content'>
 
-        {% for post in posts %}
+        {% for v in post %}
         <div class='article'>
         <div class='post-title'>
-            <a href='post/{{ post.slug }}'>{{ post.title }}</a>
-            
+            <a href='post/{{ post.slug }}'>{{ v.title }}</a>
+        </div>
+        <div class='author'>
+            by {{ v.author }}
+        </div>
+        <div class='date'>
+            {{ v.created_on }}
         </div>
         <div class='post-body'>
-            {{ post.content }}
+            {{ v.content }}
         </div>
         </div>
         {% endfor %}

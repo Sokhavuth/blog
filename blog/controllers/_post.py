@@ -4,10 +4,10 @@ from datetime import datetime
 from pytz import timezone
 from .. models import Post
 
-def call():
+def call(slug):
     kdict = deepcopy(config.kdict)
     kdict['datetime'] = datetime.now(timezone('Asia/Phnom_Penh'))
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    kdict['posts'] = queryset
-    
+    queryset = Post.objects.filter(slug=slug)
+    kdict['post'] = queryset
+
     return kdict

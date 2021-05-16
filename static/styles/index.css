@@ -25,3 +25,13 @@
     font: 20px/1.5 Oswald;
     margin-bottom: 20px;
 }
+
+.main .content .date{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        grid-template-columns: 100%;
+    }
+}
