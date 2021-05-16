@@ -17,6 +17,9 @@
   <body>
     {% include 'partials/header.html' %}
 
-    
+    {% block main %}
+      {% block content %}<!-- to be implemented -->{% endblock %}
+      {% block sidebar %}<!-- to be implemented -->{% endblock %}
+    {% endblock %}
   </body>
 </html>

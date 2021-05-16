@@ -1,0 +1,27 @@
+.main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 73% auto;
+    grid-gap: 20px;
+}
+
+.main .sidebar{
+    padding: 20px;
+    background: #ddd;
+}
+
+.main .content .article{
+    background: #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.main .content .article:last-child{
+    margin-bottom: 0;
+}
+
+.main .content .post-title{
+    font: 20px/1.5 Oswald;
+    margin-bottom: 20px;
+}

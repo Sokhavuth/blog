@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block insert_into_head %}
+<link rel="stylesheet" href="{% static 'styles/index.css' %}">
+{% endblock %}
+
+
+{% block main %}
+<div class='main region'>
+    {% block content %}
+    <div class='content'>
+
+        {% for post in posts %}
+        <div class='article'>
+        <div class='post-title'>
+            <a href='post/{{ post.slug }}'>{{ post.title }}</a>
+            
+        </div>
+        <div class='post-body'>
+            {{ post.content }}
+        </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% endblock %}
+
+    {% block sidebar %}
+    <div class='sidebar'>
+        ផ្សាយ​ពាណិជ្ជកម្ម
+    </div>
+    {% endblock %}
+</div>
+    
+{% endblock %}
